@@ -2,23 +2,38 @@
 
 ### Recommended: Nix (Linux / NixOS)
 
-1. Install
+1. Install Nix
+   <details>
+	<summary>Install command</summary>
 
-Nix Follow the official installer. If you’re on NixOS already, skip this.
+   Follow the official installer:
+   https://nixos.org/download/
+
+   If you’re on NixOS already, skip this step.
+   </details>
 
 2. Enter the dev environment
 
-Default shell (C++ + firmware tools):
+- Default shell (C++ + firmware tools):
+  <details>
+	<summary>Command</summary>
 
-`nix develop`
+      nix develop
+  </details>
 
-ROS shell (C++ ROS build tooling):
+- ROS shell (C++ ROS build tooling):
+  <details>
+	<summary>Command</summary>
 
-`nix develop .#ros`
+      nix develop .#ros
+  </details>
 
-Firmware-only shell (optional):
+- Firmware-only shell (optional):
+  <details>
+	<summary>Command</summary>
 
-`nix develop .#fw`
+      nix develop .#fw
+  </details>
 
 That’s it. The shell provides CMake/clang/ninja and (by default) PlatformIO +
 serial tools.
