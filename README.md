@@ -4,11 +4,24 @@
 
 We use Nix to provide reproducible development environments.
 
-Default (C++ + Firmware) `nix develop`
+Default (C++ + Firmware) 
 
-ROS Development `nix develop .#ros`
+```bash 
+nix develop
+```
 
-Firmware Only `nix develop .#fw`
+ROS Development 
+
+```bash 
+nix develop .#ros
+```
+
+
+Firmware Only 
+
+```bash 
+nix develop .#fw
+```
 
 ## Getting Started
 
