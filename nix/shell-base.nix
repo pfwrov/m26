@@ -15,6 +15,7 @@ mkShell {
     gdb
     ccache
     pkg-config
+    perl
 
     clang-tools
     cppcheck
