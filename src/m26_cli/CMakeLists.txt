@@ -9,4 +9,7 @@ target_link_system_libraries(
   fmt::fmt
   spdlog::spdlog)
 
+find_package(rclcpp REQUIRED)
+target_link_libraries(intro PRIVATE rclcpp::rclcpp)
+
 target_include_directories(intro PRIVATE "${CMAKE_BINARY_DIR}/configured_files/include")
