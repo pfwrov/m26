@@ -11,6 +11,9 @@ let
     paths = [
       rosPkgs.ros-core
 
+      rosPkgs.ament-cmake
+      rosPkgs.ament-cmake-core
+
       rosPkgs.rclcpp
       rosPkgs.rclcpp-components
       rosPkgs.std-msgs
@@ -46,6 +49,8 @@ mkShell {
     pkg-config
     python3
     colcon
+
+    SDL2
 
     protobuf
     yaml-cpp
